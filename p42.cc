@@ -20,7 +20,7 @@ public:
       if (skip[i]) continue;
       int base = height[i];
       int l = i;
-      int r = i;     
+      int r = i;
       while ( l > 0 && height[l-1] <= base) l--;
       while ( r < height.size() - 1 && height[r+1] <= base) {
           if (height[r+1] == base) skip[r+1] = true;
